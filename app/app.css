@@ -2,11 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
-body {
-  @apply bg-white dark:bg-gray-950;
-
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
+@layer components{
+  .topBarMenuDropDownItemButton {
+    @apply text-red-700 flex justify-between w-full px-4 py-2 text-sm leading-5 text-left
   }
 }
+
